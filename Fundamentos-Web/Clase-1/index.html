@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 1 - Intro a HTML</title>
+  </head>
+  <body>
+    <!-- TÍTULOS -->
+    <h1>Titulo Principal</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+    <!-- PÁRRAFOS -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum
+      dolore nemo, voluptatibus nihil in obcaecati repellat minus placeat
+      excepturi est, sunt dignissimos, mollitia aut fugiat. Voluptatum, soluta
+      nulla et ut perspiciatis ipsam adipisci officia eius
+      <br />
+      <br />
+      reprehenderit ratione earum fugit quasi expedita, error odit cupiditate
+      fugiat! Quo vitae nobis facilis, velit obcaecati doloremque, dignissimos
+      deserunt vel maxime mollitia cupiditate laudantium, accusantium laboriosam
+      aut voluptatibus animi minima facere excepturi harum ducimus?
+    </p>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, eius in
+      architecto repudiandae vel labore repellendus fugit reprehenderit eligendi
+      doloribus!
+    </p>
+
+    <!-- FORMATOS DE TEXTO -->
+    <p><b>Texto en negrita</b></p>
+    <p><strong>Texto importante</strong></p>
+    <p><i>Texto en cursiva</i></p>
+    <p><em>Texto enfatizado</em></p>
+    <p><small>Texto pequeño</small></p>
+    <p><mark>Texto resaltado</mark></p>
+    <p><del>Texto tachado</del></p>
+    <p><ins>Texto subrayado</ins></p>
+    <p>Texto en <sub>subindice</sub></p>
+    <p>Texto en <sup>superindice</sup></p>
+
+    <!-- ENLACES -->
+    <a href="./nuevo.html">Ver página nueva</a>
+    <a href="https://www.codingdojo.la">Visitar codingdojo.la</a>
+
+    <a href="./nuevo.html" target="_blank"><del>Ver página nueva</del></a>
+    <a href="https://www.codingdojo.la" target="_blank"
+      >Visitar codingdojo.la</a
+    >
+
+    <!-- LISTAS -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+    <!-- TABLAS -->
+    <table border="1">
+      <thead>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+        <th>Columna 3</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dato col 1</td>
+          <td>Dato col 2</td>
+          <td>Dato col 3</td>
+        </tr>
+        <tr>
+          <td>Dato 4</td>
+          <td></td>
+          <td>Dato 5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br />
+
+    <!-- FORMULARIOS -->
+    <form action="" method="GET" enctype="multipart/form-data">
+      <!--<fieldset>
+            <legend>Información de Usuario:</legend>
+        </fieldset>-->
+
+      <h3>Información de Usuario:</h3>
+      <input type="text" name="nombre" placeholder="Nombre Completo" />
+
+      <br />
+
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" name="nombre" />
+
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" name="contrasena" />
+
+      <label for="genero">Género:</label>
+
+      <input type="radio" name="genero" value="mujer" id="mujer" />
+      <label for="mujer">Mujer</label>
+
+      <input type="radio" name="genero" value="hombre" id="hombre" />
+      <label for="hombre">Hombre</label>
+
+      <input type="radio" name="genero" value="nodecir" id="nodecir" />
+      <label for="nodecir">Prefiero no decirlo</label>
+
+      <textarea>Mensaje...</textarea>
+
+      <select name="talles" id="talles">
+        <option value="L">Large</option>
+        <option value="M">Medium</option>
+        <option value="S">Small</option>
+      </select>
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpiar" />
+    </form>
+
+    <!-- INCRUSTAR IMÁGENES -->
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDF-eXWzyVV-c7G8efuKOtmpviLP6zAZCBmg&s"
+      alt="Logo de Coding Dojo"
+      title="Coding Dojo"
+    />
+
+    <!-- CONTENEDORES GENÉRICOS -->
+    <div style="background-color: yellow">Elemento en BLOQUE</div>
+    <span style="background-color: orange">Elemento en LINEA</span>
+
+    <!-- LAYOUT -->
+    <header>
+      <!-- Encabezado de la página -->
+    </header>
+    <nav>
+      <!-- Barra de navegación / Menú principal -->
+    </nav>
+    <section>
+      <!-- Sección que contiene información -->
+      <article>
+        <!-- Artículo independiente -->
+      </article>
+    </section>
+    <aside>
+      <!-- Menú lateral (Tabla de contenido / Índice) -->
+    </aside>
+    <footer>
+      <!-- Pie de página -->
+    </footer>
+  </body>
+</html>
