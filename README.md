@@ -8,15 +8,16 @@
 
 ### CSS
 
-- [Clase 2 - CSS + Modelo de Caja (Box Model)]()
-- [Clase 3 - Display y Position]()
+- [Clase 2 - CSS + Modelo de Caja (Box Model)](Fundamentos-Web/Clase-2)
+- [Clase 3 - Display y Position](Fundamentos-Web/Clase-3)
 - [Clase 4 - Flexbox + Diseño Responsive]()
 
 ### Git / Github
+
 - [Clase 5 - Terminal, Git y Github]()
 - [Clase 6 - Git/VSCode y Bootstrap]()
 
-### JavaScript 
+### JavaScript
 
 - [Clase 7 - Fundamentos de JavaScript I]()
 - [Clase 8 - Fundamentos de JavaScript II]()
@@ -32,7 +33,7 @@
 
 - [Clase 14]()
 
-### Bases de Datos 
+### Bases de Datos
 
 - [Clase]()
 
