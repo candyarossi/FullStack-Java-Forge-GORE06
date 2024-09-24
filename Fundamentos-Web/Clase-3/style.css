@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#boxModel {
+  background-color: orange;
+
+  /* Ancho */
+  width: 200px;
+  /* Alto */
+  height: 200px;
+
+  /* Márgenes */
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+
+  /* Todos los márgenes */
+  margin: 40px;
+  /* Top=Bottom - Left=Right*/
+  margin: 20px 40px;
+  /* Top - Right - Bottom - Left */
+  margin: 10px 20px 30px 40px;
+
+  /* Padding */
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  /* Todos los padding */
+  padding: 30px;
+  /* Top=Bottom - Left=Right*/
+  padding: 20px 30px;
+  /* Top - Right - Bottom - Left */
+  padding: 10px 20px 30px 40px;
+
+  /* Bordes */
+  border-top: solid 1px red;
+  border-right: dotted 2px green;
+  border-bottom: dashed 3px blue;
+  border-left: groove 4px yellow;
+
+  /* Todos los bordes */
+  border: solid 3px orangered;
+  border-style: dashed;
+  border-width: 5px;
+  border-color: orangered;
+
+  /* Redondear esquinas */
+  border-radius: 50%;
+}
+
+p {
+  background-color: yellow;
+  /* display: inline; */
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+p {
+  /* visibility: hidden; */
+  display: none;
+}
+
+span {
+  background-color: lightgray;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: orange;
+  margin: 0 10px;
+}
+
+#div2 {
+  background-color: orangered;
+  position: relative;
+  /* Valores: static - relative - absolute - sticky - fixed */
+  top: 40px;
+  left: 40px;
+}
+
+#div2 {
+  overflow: hidden;
+  /* Valores: visible - hidden - scroll - auto */
+}
