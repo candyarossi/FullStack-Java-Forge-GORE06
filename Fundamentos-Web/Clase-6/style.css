@@ -95,6 +95,13 @@ span {
     display: block;
 }
 
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: white;
+}
 
 /* Media Queries Bootstrap */
 
