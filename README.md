@@ -22,16 +22,16 @@
 - [Clase 7 - Fundamentos de JavaScript I](Fundamentos-Web/Clase-7)
 - [Clase 8 - Fundamentos de JavaScript II](Fundamentos-Web/Clase-8)
 - [Clase 9 - Document Object Model](Fundamentos-Web/Clase-9)
-- [Clase 10 - Repaso de Examen](Fundamentos-Web/Clase-10)
-- [Clase 11 - APIs I](Fundamentos-Web/Clase-11)
-- [Clase 12 - APIs II](Fundamentos-Web/Clase-12)
-- [Clase 13 - Modales](Fundamentos-Web/Clase-13)
+- [Repaso de Examen](Fundamentos-Web/Repaso)
+- [Clase 10 - APIs I](Fundamentos-Web/Clase-10)
+- [Clase 11 - APIs II](Fundamentos-Web/Clase-11)
+- [Clase 12 - Modales](Fundamentos-Web/Clase-12)
 
 ## Java / Spring
 
 ### Introducción a Java / POO
 
-- [Clase 14]()
+- [Clase 13]()
 
 ### Bases de Datos
 
