@@ -31,12 +31,12 @@
 
 ### Introducción a Java / POO
 
-- [Clase 13 - Fundamentos de Java](Java/Clase1)
-- [Clase 14 - Estructuras Compuestas](Java/Clase2)
-- [Clase 15 - Clases y Objetos I](Java/Clase3)
-- [Clase 16 - Clases y Objetos II](Java/Clase4)
-- [Clase 17 - Herencia](Java/Clase5/proyectoclase5)
-- [Clase 18 - Interfaces y Clases Abstractas](Java/Clase6/proyectoclase5)
+- [Clase 13 - Fundamentos de Java](Java/Clase-1)
+- [Clase 14 - Estructuras Compuestas](Java/Clase-2)
+- [Clase 15 - Clases y Objetos I](Java/Clase-3)
+- [Clase 16 - Clases y Objetos II](Java/Clase-4)
+- [Clase 17 - Herencia](Java/Clase-5/proyectoclase5)
+- [Clase 18 - Interfaces y Clases Abstractas](Java/Clase-6/proyectoclase5)
 
 ### Bases de Datos
 
@@ -48,7 +48,7 @@
 
 ### Spring
 
-- [Clase 23 - Spring (Rutas)](Spring/)
+- [Clase 23 - Spring (Rutas)](Spring/Clase-1/demoJuegos)
 - [Clase 24 - JSP y Controladores](Spring/)
 - [Clase 25 - POST y Formularios](Spring/)
 - [Clase 26 - Sesiones y Validaciones](Spring/)
