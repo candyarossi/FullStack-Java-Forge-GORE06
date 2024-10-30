@@ -49,7 +49,7 @@
 ### Spring
 
 - [Clase 23 - Spring (Rutas)](Spring/Clase-1/demoJuegos)
-- [Clase 24 - JSP y Controladores](Spring/)
+- [Clase 24 - JSP y Controladores](Spring/Clase-2/demoJuegos)
 - [Clase 25 - POST y Formularios](Spring/)
 - [Clase 26 - Sesiones y Validaciones](Spring/)
 - [Clase 27 - Spring + SQL](Spring/)
