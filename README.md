@@ -52,7 +52,7 @@
 - [Clase 24 - JSP y Controladores](Spring/Clase-2/demoJuegos)
 - [Clase 25 - POST y Formularios](Spring/Clase-3/demoJuegos)
 - [Clase 26 - Sesiones y Validaciones](Spring/Clase-4/demoJuegos)
-- [Clase 27 - Spring + SQL](Spring/)
+- [Clase 27 - Spring + SQL](Spring/Clase-5/demoJuegos)
 - [Clase 28 - Spring CRUD I](Spring/)
 - [Clase 29 - Spring CRUD II](Spring/)
 - [Clase 30 - Relaciones 1:M](Spring/)
