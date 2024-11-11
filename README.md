@@ -56,7 +56,7 @@
 - [Clase 28 - Spring CRUD I](Spring/Clase-6/demoJuegos)
 - [Clase 29 - Spring CRUD II](Spring/Clase-7/demoJuegos)
 - [Clase 30 - Relaciones 1:M](Spring/Clase-7/demoJuegos)
-- [Clase 31 - Relaciones M:N](Spring/)
+- [Clase 31 - Relaciones M:N](Spring/Clase-8/demoJuegos)
 - [Clase 32 - Login y Registro](Spring/)
 - [Clase 33 - Seguridad](Spring/)
 - [Clase 34 - Diseño](Spring/)
