@@ -58,7 +58,7 @@
 - [Clase 30 - Relaciones 1:M](Spring/Clase-7/demoJuegos)
 - [Clase 31 - Relaciones M:N](Spring/Clase-8/demoJuegos)
 - [Clase 32 - Login y Registro](Spring/Clase-9/demoJuegos)
-- [Clase 33 - Seguridad](Spring/)
+- [Clase 33 - Seguridad](Spring/Clase-10/demoJuegos)
 - [Clase 34 - Diseño](Spring/)
 - [Clase 35 - Extras I](Spring/)
 - [Clase 36 - Extras II](Spring/)
