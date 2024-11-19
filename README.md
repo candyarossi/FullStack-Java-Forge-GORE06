@@ -61,7 +61,7 @@
 - [Clase 33 - Seguridad](Spring/Clase-10/demoJuegos)
 - [Clase 34 - Diseño](Spring/Clase-11/demoJuegos)
 - [Clase 35 - Extras I](Spring/Clase-11/demoJuegos)
-- [Clase 36 - Extras II](Spring/)
+- [Clase 36 - Extras II](Spring/Clase-12/demoJuegos)
 - [Clase 37 - Extras III](Spring/)
 - [Repaso de Examen I](Spring/)
 - [Repaso de Examen II](Spring/)
