@@ -62,7 +62,7 @@
 - [Clase 34 - Diseño](Spring/Clase-11/demoJuegos)
 - [Clase 35 - Extras I](Spring/Clase-11/demoJuegos)
 - [Clase 36 - Extras II](Spring/Clase-12/demoJuegos)
-- [Clase 37 - Extras III](Spring/)
+- [Clase 37 - Extras III](Spring/Clase-13/demoJuegos)
 - [Repaso de Examen I](Spring/)
 - [Repaso de Examen II](Spring/)
 - [Clase 38 - Extras IV](Spring/)

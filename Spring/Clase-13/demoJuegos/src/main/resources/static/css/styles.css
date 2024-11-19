@@ -1,0 +1,239 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #151515;
+	font-family: Calibri, sans serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+h1, h2 {
+	color: #FDCA52;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30%;
+}
+
+.content {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	gap: 2%;
+}
+
+.vComunidad, .vPlataforma {
+	width: 850px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+a, button, input[type="submit"] {
+	text-decoration: none;
+	background-color: #3B3B3B;
+	color: white;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.videojuegos li {
+	background-color: #202020;
+	border: 1px solid #3B3B3B;
+	border-radius: 15px;
+	overflow: hidden;
+	max-width: 140px;
+	padding: 10px;
+}
+
+.videojuegos li img {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	top: -10px;
+	left: -25px;
+}
+
+label {
+	margin-top: 10px;
+}
+
+input, select, textarea {
+	background-color: #9F9F9F;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.error {
+	color: #FC4B37;
+}
+
+#detalle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 750px;
+	margin-top: 30px;
+}
+
+#detalle>div {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	gap: 25px;
+	margin-bottom: 20px;
+}
+
+#detalle h1 {
+	margin-top: -10px;
+}
+
+#detalle ul, #detalle ol {
+	margin-left: -20px;
+}
+
+#detalle ol li {
+	display: inline-block;
+	border-radius: 5px;
+	margin: 3px;
+}
+
+#detalle img {
+	width: 60%;
+	border-radius: 15px;
+}
+
+#detalle span {
+	color: #FDCA52;
+}
+
+.gen, .plat {
+	padding: 5px;
+}
+
+.plat {
+	background-color: #5D5D5D;
+}
+
+.resenas {
+	margin-top: -10px;
+}
+
+.resenas li {
+	background-color: #202020;
+	border: 1px solid #3B3B3B;
+	border-radius: 15px;
+	overflow: hidden;
+	max-width: 180px;
+	padding: 10px;
+}
+
+.paginador {
+	display: flex;
+	justify-content: center;
+	gap: 2px;
+}
+
+.paginador a {
+	padding: 8px;
+}
+
+/* G�neros */
+.Action {
+	background-color: #8c4614;
+}
+
+.Indie {
+	background-color: #d2681e;
+}
+
+.Adventure {
+	background-color: #f28a19;
+}
+
+.RPG {
+	background-color: #ef7d53;
+}
+
+.Strategy {
+	background-color: #ec634c;
+}
+
+.Shooter {
+	background-color: #e84a1d;
+}
+
+.Casual {
+	background-color: #b22223;
+}
+
+.Simulation {
+	background-color: #dc153d;
+}
+
+.Puzzle {
+	background-color: #e83089;
+}
+
+.Arcade {
+	background-color: #c51e84;
+}
+
+.Platformer {
+	background-color: #754595;
+}
+
+.Racing {
+	background-color: #644595;
+}
+
+.Massively {
+	background-color: #6664ab;
+}
+
+.Sports {
+	background-color: #244093;
+}
+
+.Fighting {
+	background-color: #4683c4;
+}
+
+.Family {
+	background-color: #3dbaec;
+}
+
+.Board {
+	background-color: #43bbc5;
+}
+
+.Educational {
+	background-color: #2c8b57;
+}
+
+.Card {
+	background-color: #6b8e2d;
+}
