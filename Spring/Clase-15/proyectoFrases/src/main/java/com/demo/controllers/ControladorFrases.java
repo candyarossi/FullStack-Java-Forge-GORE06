@@ -1,5 +1,8 @@
 package com.demo.controllers;
 
+import java.util.Collections;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -37,7 +40,9 @@ public class ControladorFrases {
 		if (idUsuario == null) {
 			return "redirect:/";
 		}
-		modelo.addAttribute("frases", this.servicio.obtenerTodas());
+		List<Frase> frases = this.servicio.obtenerTodas();
+		Collections.sort(frases);
+		modelo.addAttribute("frases", frases);
 		modelo.addAttribute("favsUsuario", this.servicioUsuarios.obtenerPorId(idUsuario).getFrasesFavoritas());
 		return "frases.jsp";
 	}
@@ -112,7 +117,9 @@ public class ControladorFrases {
 		if (idUsuario == null) {
 			return "redirect:/";
 		}
-		modelo.addAttribute("favsUsuario", this.servicioUsuarios.obtenerPorId(idUsuario).getFrasesFavoritas());
+		List<Frase> frases = this.servicioUsuarios.obtenerPorId(idUsuario).getFrasesFavoritas();
+		Collections.sort(frases);
+		modelo.addAttribute("favsUsuario", frases);
 		return "favoritos.jsp";
 	}
 
@@ -122,9 +129,7 @@ public class ControladorFrases {
 		if (idUsuario == null) {
 			return "redirect:/";
 		}
-		System.out.println("1");
 		this.servicioFavoritos.agregarFavorito(idUsuario, idFrase);
-		System.out.println("2");
 		return "redirect:/frases";
 	}
 

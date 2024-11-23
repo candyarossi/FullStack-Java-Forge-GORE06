@@ -6,10 +6,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Agregar Frase</title>
+<link rel="stylesheet" href="/css/styles.css"/>
 </head>
 <body>
 	<h1>FRASES</h1>
-	<ul>
+	<ul id="nav">
 		<li><a href="/favoritos">Mis Favoritos</a></li>
 		<li><a href="/frases">Todas las Frases</a></li>
 		<li><a href="/form/agregar">Agregar Frase</a></li>

@@ -6,10 +6,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Registrarse</title>
+<link rel="stylesheet" href="/css/styles.css"/>
 </head>
 <body>
 	<h1>FRASES</h1>
-	<ul>
+	<ul id="nav">
 		<li><a href="/">Login</a></li>
 		<li><a href="/registro">Registro</a></li>
 	</ul>

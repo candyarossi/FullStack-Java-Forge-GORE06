@@ -18,19 +18,15 @@ public class ServicioFavoritos {
 	private RepositorioFrases repositorioFrases;
 
 	public void agregarFavorito(Long idUsuario, Long idFrase) {
-		System.out.println("3");
 		Usuario usuario = this.repositorioUsuarios.findById(idUsuario).orElse(null);
 		Frase frase = this.repositorioFrases.findById(idFrase).orElse(null);
-		System.out.println("4");
 		usuario.getFrasesFavoritas().add(frase);
 		this.repositorioUsuarios.save(usuario);
-		System.out.println("5");
 	}
 
 	public void quitarFavorito(Long idUsuario, Long idFrase) {
 		Usuario usuario = this.repositorioUsuarios.findById(idUsuario).orElse(null);
 		Frase frase = this.repositorioFrases.findById(idFrase).orElse(null);
-
 		usuario.getFrasesFavoritas().remove(frase);
 		this.repositorioUsuarios.save(usuario);
 	}

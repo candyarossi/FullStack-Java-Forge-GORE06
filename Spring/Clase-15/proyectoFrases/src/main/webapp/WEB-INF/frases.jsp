@@ -8,10 +8,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>FRASES</title>
+<link rel="stylesheet" href="/css/styles.css"/>
 </head>
 <body>
 	<h1>FRASES</h1>
-	<ul>
+	<ul id="nav">
 		<li><a href="/favoritos">Mis Favoritos</a></li>
 		<li><a href="/frases">Todas las Frases</a></li>
 		<li><a href="/form/agregar">Agregar Frase</a></li>
@@ -36,26 +37,23 @@
 					</c:if>
 				</td>
 				<td>
-				<c:if test="${fn:length(favsUsuario) > 0}">				
-					<c:forEach var="fraseUsuario" items="${favsUsuario}">
-						<c:if test="${fraseUsuario.id == frase.id}">
-							<form:form action="/quitarFav/${frase.id}" method="POST">
-								<input type="hidden" name="_method" value="DELETE"/>
-								<button style="font-size: 27px">&#9829;</button>
-							</form:form>
-						</c:if>
-						<c:if test="${fraseUsuario.id != frase.id}">
-							<form:form action="/agregarFav/${frase.id}" method="POST">
-								<button style="font-size: 27px">&#9825;</button>
-							</form:form>
-						</c:if>
+					<c:set var="esFav" value="false" />
+					<c:forEach var="fav" items="${favsUsuario}">
+    					<c:if test="${fav.id == frase.id}">
+        					<c:set var="esFav" value="true" />
+   						</c:if>
 					</c:forEach>
-				</c:if>
-				<c:if test="${fn:length(favsUsuario) == 0}">
-					<form:form action="/agregarFav/${frase.id}" method="POST">
-						<button style="font-size: 27px">&#9825;</button>
-					</form:form>
-				</c:if>
+					<c:if test="${esFav}">
+   						<form:form action="/quitarFav/${frase.id}" method="POST">
+							<input type="hidden" name="_method" value="DELETE"/>
+							<button style="font-size: 27px">&#9829;</button>
+						</form:form>
+					</c:if>
+					<c:if test="${!esFav || fn:length(favsUsuario) == 0}">
+						<form:form action="/agregarFav/${frase.id}" method="POST">
+							<button style="font-size: 27px"> &#9825;</button>
+						</form:form>
+					</c:if>					
 				</td>
 			</tr>
 		</c:forEach>

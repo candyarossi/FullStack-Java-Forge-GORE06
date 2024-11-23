@@ -12,13 +12,12 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "frases")
-public class Frase {
+public class Frase implements Comparable<Frase> {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -47,7 +46,6 @@ public class Frase {
 
 	@ManyToMany
 	@JoinTable(name = "favoritos", joinColumns = @JoinColumn(name = "id_frase"), inverseJoinColumns = @JoinColumn(name = "id_usuario"))
-	@Transient
 	private List<Usuario> usuariosFavoritos;
 
 	public Frase() {
@@ -116,6 +114,19 @@ public class Frase {
 
 	public void setCreador(Usuario creador) {
 		this.creador = creador;
+	}
+
+	public List<Usuario> getUsuariosFavoritos() {
+		return usuariosFavoritos;
+	}
+
+	public void setUsuariosFavoritos(List<Usuario> usuariosFavoritos) {
+		this.usuariosFavoritos = usuariosFavoritos;
+	}
+
+	@Override
+	public int compareTo(Frase otra) {
+		return this.texto.compareTo(otra.texto);
 	}
 
 }
