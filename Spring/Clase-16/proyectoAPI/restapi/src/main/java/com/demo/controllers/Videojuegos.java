@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -40,7 +42,7 @@ public class Videojuegos {
 			response.put("cantPaginas", paginasTotales);
 			response.put("videojuegos", InfoApi.get10Videogames(pagina));
 		} catch (Exception e) {
-			return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(null, HttpStatus.I_AM_A_TEAPOT);
 		}
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
@@ -52,7 +54,7 @@ public class Videojuegos {
 			response.put("generos", servicioGeneros.obtenerTodos());
 			response.put("plataformas", servicioPlataformas.obtenerTodas());
 		} catch (Exception e) {
-			return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(null, HttpStatus.I_AM_A_TEAPOT);
 		}
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
@@ -62,14 +64,34 @@ public class Videojuegos {
 		try {
 			servicioVideojuegos.crear(videojuego);
 		} catch (Exception e) {
-			return new ResponseEntity<>(false, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(false, HttpStatus.I_AM_A_TEAPOT);
 		}
 		return new ResponseEntity<>(true, HttpStatus.CREATED);
 	}
 
+	@PutMapping("/editar")
+	public ResponseEntity<Boolean> editar(@RequestBody Videojuego videojuego) {
+		try {
+			servicioVideojuegos.actualizar(videojuego);
+		} catch (Exception e) {
+			return new ResponseEntity<>(false, HttpStatus.I_AM_A_TEAPOT);
+		}
+		return new ResponseEntity<>(true, HttpStatus.OK);
+	}
+
+	@DeleteMapping("/eliminar")
+	public ResponseEntity<Boolean> eliminar(@RequestParam("id") int id) {
+		try {
+			servicioVideojuegos.eliminar((long) id);
+		} catch (Exception e) {
+			return new ResponseEntity<>(false, HttpStatus.I_AM_A_TEAPOT);
+		}
+		return new ResponseEntity<>(true, HttpStatus.OK);
+	}
+
 	@GetMapping("/detalle")
 	public ResponseEntity<Videojuego> detalle(@RequestParam("id") int id, @RequestParam("fuente") String fuente) {
-		Videojuego videojuego = null;
+		Videojuego videojuego = new Videojuego();
 		try {
 			if (fuente.equals("api")) {
 				videojuego = InfoApi.getVideogame(id);
@@ -77,7 +99,7 @@ public class Videojuegos {
 				videojuego = servicioVideojuegos.obtenerPorId((long) id);
 			}
 		} catch (Exception e) {
-			return new ResponseEntity<>(videojuego, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<>(null, HttpStatus.I_AM_A_TEAPOT);
 		}
 		return new ResponseEntity<>(videojuego, HttpStatus.OK);
 	}

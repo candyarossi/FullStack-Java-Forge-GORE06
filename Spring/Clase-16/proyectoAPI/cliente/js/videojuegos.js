@@ -25,6 +25,8 @@ async function cargarJuegos(page) {
                   <a href="./detalle.html?id=${
                     element.id
                   }&fuente=db">Detalles</a>
+                  <a href="./editar.html?id=${element.id}">Editar</a>
+                  <button onclick="eliminar(${element.id})">Eliminar</button>
               </li>`;
   });
 
@@ -38,5 +40,16 @@ async function cargarJuegos(page) {
 
   for (let i = 1; i <= juegos.cantPaginas; i++) {
     paginador.innerHTML += `<button onclick="cargarJuegos(${i})">${i}</button>`;
+  }
+}
+
+async function eliminar(id) {
+  let response = await fetch("http://localhost:8080/eliminar?id=" + id, {
+    method: "DELETE",
+  });
+  let rta = await response.json();
+
+  if (rta) {
+    window.location.href = "./videojuegos.html";
   }
 }
